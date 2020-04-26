@@ -1,13 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding:24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#CC4224;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+  font-size:32px;
+  line-height:40px;
+  font-weight:700;
+  text-transform:uppercase;
+  color:#F3D403;
 }
+
+.superhero-btn{
+  color:#CC4224;
+  background-color:#F3D403;
+  padding:12px 24px;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.superhero-btn:hover{
+  text-decoration:underline;
+  opacity:0.85;
+}
+
+.superhero-name{
+  display:inline-block;
+  margin-top:24px;
+  color:#F3D403;
+  font-size:20px;
+  line-height:28px;
+}
+
+.SuperHeroCard-container{
+  margin-top:24px;
+  display:block;
+}
+
