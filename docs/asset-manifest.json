@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-hero-select/static/css/main.743ff929.chunk.css",
+    "main.js": "/react-hero-select/static/js/main.0f2433ff.chunk.js",
+    "main.js.map": "/react-hero-select/static/js/main.0f2433ff.chunk.js.map",
+    "runtime-main.js": "/react-hero-select/static/js/runtime-main.b51ed7db.js",
+    "runtime-main.js.map": "/react-hero-select/static/js/runtime-main.b51ed7db.js.map",
+    "static/js/2.71471e22.chunk.js": "/react-hero-select/static/js/2.71471e22.chunk.js",
+    "static/js/2.71471e22.chunk.js.map": "/react-hero-select/static/js/2.71471e22.chunk.js.map",
+    "index.html": "/react-hero-select/index.html",
+    "precache-manifest.5a7e58d386f415a13ff27befb35615f4.js": "/react-hero-select/precache-manifest.5a7e58d386f415a13ff27befb35615f4.js",
+    "service-worker.js": "/react-hero-select/service-worker.js",
+    "static/css/main.743ff929.chunk.css.map": "/react-hero-select/static/css/main.743ff929.chunk.css.map",
+    "static/js/2.71471e22.chunk.js.LICENSE.txt": "/react-hero-select/static/js/2.71471e22.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b51ed7db.js",
+    "static/js/2.71471e22.chunk.js",
+    "static/css/main.743ff929.chunk.css",
+    "static/js/main.0f2433ff.chunk.js"
+  ]
+}
