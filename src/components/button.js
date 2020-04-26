@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import SuperHeroCard from './superherocard';
 
 function MarvelButton() {
-    const [superHeroID, setSuperHeroID] = useState(0);
     const [superHero, setSuperHero] = useState('');
     const [superHeroDetails, setSuperHeroDetails] = useState('');
 
@@ -18,10 +17,9 @@ function MarvelButton() {
         if(counter === 7){
             const superHeroSelect = Math.floor(Math.random() * 732);
 
-            setSuperHeroID(superHeroSelect);
             setSuperHero('');
 
-            fetch("https://superheroapi.com/api/10222158177165164/"+superHeroSelect)
+            fetch("https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/10222158177165164/"+superHeroSelect)
             .then(res => res.json())
             .then(
                 (result) => {
