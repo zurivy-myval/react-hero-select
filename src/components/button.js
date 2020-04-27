@@ -41,7 +41,7 @@ function MarvelButton(props) {
         
         if(counter === 7){
             const superHeroIds = [30, 34, 35, 38, 60, 63, 69, 75, 95, 105, 106, 145, 149, 156, 162, 176, 185, 196, 201, 213, 222, 227, 233, 234, 238, 251, 263, 273, 274, 275, 280, 298, 299, 303, 306, 313, 322, 328, 332, 346, 356, 361, 367, 374, 391, 413, 414, 416, 423, 479, 489, 490, 491, 522, 527, 530, 558, 567, 620, 627, 638, 659, 687, 697, 708, 714, 720, 729];
-            const superHeroSelect = superHeroIds[Math.floor(Math.random() * superHeroIds.length)];
+            const superHeroSelect = superHeroIds[Math.floor(Math.random()*superHeroIds.length)];
 
             fetch("https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/10222158177165164/"+superHeroSelect)
             .then(res => res.json())
