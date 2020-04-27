@@ -1,7 +1,32 @@
 import React, { useState } from 'react';
 import SuperHeroCard from './superherocard';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
-function MarvelButton() {
+const styles = theme => ({
+    button: {
+      margin: 30,
+      paddingTop: theme.spacing(2),
+      paddingBottom: theme.spacing(2),
+      paddingLeft: theme.spacing(8),
+      paddingRight: theme.spacing(8),
+      fontSize: 18,
+      color: '#F3D403',
+      borderColor: '#F3D403',
+      '&:hover': {
+        borderColor: '#F3D403',
+        opacity: 0.7,
+        textDecoration: 'underline'
+     },
+    },
+    input: {
+      display: 'none',
+    },
+  });
+
+function MarvelButton(props) {
+    const { classes } = props;
+
     const [superHero, setSuperHero] = useState('');
     const [superHeroDetails, setSuperHeroDetails] = useState('');
 
@@ -17,13 +42,12 @@ function MarvelButton() {
         if(counter === 7){
             const superHeroSelect = Math.floor(Math.random() * 732);
 
-            setSuperHero('');
-
             fetch("https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/10222158177165164/"+superHeroSelect)
             .then(res => res.json())
             .then(
                 (result) => {
                     setSuperHeroDetails(result);
+                    setSuperHero('');
                 },
                 (error) => {
                     console.log(error);
@@ -40,10 +64,9 @@ function MarvelButton() {
   
     return (
      <div>
-         
-        <a href="#test" className="superhero-btn" onClick={handleClick}>
-            Yes, I am!
-        </a><br/>
+        <Button variant="outlined" color="secondary" className={classes.button} onClick={handleClick}>
+        Yes, I am!
+        </Button><br/>
         {superHero && !superHeroDetails && <span className="superhero-name">{superHero}</span>}
         {superHeroDetails &&
             <SuperHeroCard details={superHeroDetails}/>
@@ -53,4 +76,4 @@ function MarvelButton() {
   }
 
 
-export default MarvelButton;
+  export default withStyles(styles)(MarvelButton);
